@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecf1;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    font-size: 5vh;
+}
+
+form {
+    max-width: 50vw;
+    height: 80vh;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#marca, #modelo, #placa, #cpf{
+    border-radius: 10px;
+    width: 25vw;
+    height: 6vh;
+}
+
+.escrever{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.escolher{
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    font-size: 2vh;
+}
+
+#selecionar_vaga{
+    font-size: 3vh;
+}
+
+#vaga{
+    display: flex;
+    border-radius: 10px;
+    width: 25vw;
+    height: 7vh; 
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2vh;
+    width: 10vw;
+}
+
+button{
+    height: 5vh;
+    border-radius: 20px;
+    background-color: #0de411;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+    margin-top: 3vh;
+}
+
+button:hover {
+    background-color: #0c9805;
+    transform: scale(1.02);
+}
+

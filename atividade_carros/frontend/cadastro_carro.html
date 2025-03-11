@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de carro</title>
+  <link rel="stylesheet" href="./cadastro_carro.css">
+</head>
+<body class="tudo">
+  <header class="header">
+    <!-- <button id=""></button> -->
+    <h1 id="titulo">Cadastrar carro</h1>
+  </header>
+  <main>
+    <form class="form" id="formCadastro">
+      
+      <div class="escrever"><input type="text" id="marca" placeholder="Marca do veículo" required></div>
+
+      <div class="escrever"><input type="text" id="modelo" placeholder="Modelo do veículo" required></div>
+
+      <div class="escrever"><input type="text" id="placa" placeholder="Placa do veículo" required></div>
+
+      <div class="escrever"><input type="number" id="cpf" placeholder="CPF do dono" required></div>
+
+      <div class="escolher"><label for="vaga" id="selecionar_vaga">Escolha uma vaga:</label></div>
+      <select id="vaga">
+        <option value="cadeirante">Cadeirante</option>
+        <option value="gestante">Gestante</option>
+        <option value="idoso">Idoso</option>
+        <option value="deficiente">Pessoa com deficiência</option>
+        <option value="comum">Vaga comum</option>
+
+      </select>
+
+
+      <div class="botoes">
+        <button type="submit" onclick="cadastrar(event)">Cadastrar carro</button>
+        <button onclick="acessarLista(event)">Ver a lista dos carros</button>
+        <!-- <button class="editar" onclick="acessarEditar(event)">Editar</button> -->
+
+      </div>
+    </form>
+    <!-- <table class="vagas">
+      <thead>
+        <tr>
+          <th>Lista de carros estacionados</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <tr>
+          aqui dentro tem os dados dos carros estacionados na garagem
+        </tr>
+      </tbody>
+    </table> -->
+</main>
+
+  <script src="./carro.js"></script>
+</body>
+</html>

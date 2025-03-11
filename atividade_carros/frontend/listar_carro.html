@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listar carros</title>
+  <link rel="stylesheet" href="./listar_carro.css">
+</head>
+<body class="tudo">
+    <header class="header">
+        <h1 id="titulo">Estacionamento</h1>
+        <h3 id="subtitulo">Lista dos carros estacionados:</h3>
+    </header>
+    <main>
+        <table class="tabelaCarros">
+            <thead>
+              <tr>
+                <th>Marca do veículo</th>
+                <th>Modelo do veículo</th>
+                <th>Placa do veículo</th>
+                <th>CPF do dono</th>
+                <th>Vaga</th>
+                <th>Remover</th>
+                <th>Editar dados</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+              <tr>
+                <!-- aqui ficam os carros estacionados -->
+              </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Modal para editar os dados dos carros -->
+    <div id="modal" class="modal">
+        <div class="conteudoModal">
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+            <h2>Editar Carro</h2>
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" required>
+
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" required>
+
+            <label for="placa">Placa:</label>
+            <input type="text" id="placa" required>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" required>
+
+            <label for="vaga" id="vaga">Escolha uma vaga:</label>
+            <select id="vaga">
+              <option value="cadeirante">Cadeirante</option>
+              <option value="gestante">Gestante</option>
+              <option value="idoso">Idoso</option>
+              <option value="deficiente">Pessoa com deficiência</option>
+              <option value="comum">Vaga comum</option>
+            </select>
+            <button type="submit" onclick="editarCarro()">Salvar</button>
+        </div>
+    </div>
+
+    <script src="./listar_carro.js"></script>
+</body>
+</html>
