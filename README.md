@@ -34,7 +34,7 @@ Este projeto foi feito para a atividade de técnico, onde foi solicitado criar u
 
 ```bash
 # Clone este repositório
-$ git clone <https://github.com/tgmarinho/nlw1>
+$ git clone <https://marianomattev.github.io/Atividade_revis-o_3ano/>
 
 # Acesse a pasta do projeto no terminal/cmd
 $ cd atividade_carros
